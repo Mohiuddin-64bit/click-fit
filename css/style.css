@@ -1,0 +1,33 @@
+body{
+  background: url("../images/darkBg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+}
+.btn-primary {
+  background: purple;
+  outline: none;
+  border: none;
+}
+.btn-primary:hover{
+  background: rgb(78, 31, 78);
+}
+.navbar{
+  background: black;
+}
+.btn-grad {
+  background-image: linear-gradient(to right, #141E30 0%, #243B55  51%, #141E30  100%);
+  padding: 12px 14px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  border-radius: 10px;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
