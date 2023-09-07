@@ -3,6 +3,11 @@ body{
   background-size: cover;
   height: 100vh;
 }
+.hero{
+  height: 100vh;
+  padding-top: 150px;
+}
+
 .btn-primary {
   background: purple;
   outline: none;
@@ -16,18 +21,39 @@ body{
 }
 .btn-grad {
   background-image: linear-gradient(to right, #141E30 0%, #243B55  51%, #141E30  100%);
-  padding: 12px 14px;
+  padding: 10px 12px;
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
   background-size: 200% auto;
   color: white;            
   border-radius: 10px;
+  
 }
-
 .btn-grad:hover {
   background-position: right center; /* change the direction of the change here */
   color: #fff;
   text-decoration: none;
 }
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
 
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 0;
+  }
+}
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
