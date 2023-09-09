@@ -42,6 +42,15 @@ body{
   -moz-user-select: none;
   user-select: none;
 }
+/* Drag-drop feature */
+
+.upload_svg {
+  fill: var(--colorPrimaryNormal, #0576bd);
+}
+.upload_img {
+  width: calc(33.333% - (2rem / 3));
+  object-fit: contain;
+}
 
 
 
