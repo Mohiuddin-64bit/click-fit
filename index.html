@@ -143,9 +143,9 @@
 
   <!-- Upload Photos -->
   <h1 class="display-4 text-center mb-5 text-white wow animate__animated animate__heartBeat">Drag &amp; drop file</h1>
-  <form class="container wow animate__animated animate__fadeInUp">
+  <!-- <form class="container wow animate__animated animate__fadeInUp">
 
-    <fieldset class="rounded-2 bg-dark text-white  text-center mb-3 p-4">
+    <fieldset id="field" class="rounded-2 bg-dark text-white  text-center mb-3 p-4">
 
       <legend class="visually-hidden">Image uploader</legend>
 
@@ -156,7 +156,7 @@
       <p class="small my-2">Drag &amp; Drop background image inside dashed region<br><i>or</i></p>
 
       <input id="upload_image_background" data-post-name="image_background"
-        data-post-url="https://someplace.com/image/uploads/backgrounds/" class="position-absolute invisible" type="file"
+        data-post-url="http://localhost:3000/upload" class="position-absolute invisible" type="file"
         multiple accept="image/jpeg, image/png, image/svg+xml" />
 
       <label class="btn-grad mb-3" for="upload_image_background">Choose file(s)</label>
@@ -165,7 +165,10 @@
 
     </fieldset>
 
-  </form>
+  </form> -->
+  <input type="file" id="imageUpload" accept="image/*">
+  <img src="" id="previewImage" alt="Preview Image" style="display: none;">
+
   <svg style="display:none">
     <defs>
       <symbol id="icon-imageUpload" clip-rule="evenodd" viewBox="0 0 96 96">
@@ -181,8 +184,8 @@
     <div class="px-5">
       <div class="form-group">
         <label for="email">Email address</label>
-        <input type="email" name="email" required class="form-control" id="email"
-          aria-describedby="emailHelp" placeholder="Enter Your Email">
+        <input type="email" name="email" required class="form-control" id="email" aria-describedby="emailHelp"
+          placeholder="Enter Your Email">
       </div>
       <div class="form-group">
         <label for="password">Password</label>
@@ -191,8 +194,7 @@
       </div>
       <div class="form-group">
         <label for="type">User Type</label>
-        <input type="text" name="type" required class="form-control" id="type"
-          placeholder="Enter user Type">
+        <input type="text" name="type" required class="form-control" id="type" placeholder="Enter user Type">
       </div>
       <button type="submit" class="btn-grad mt-3">Registration</button>
     </div>
