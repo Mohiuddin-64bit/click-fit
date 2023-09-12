@@ -8,7 +8,6 @@ Welcome to the Click Fit project repository. Click Fit is a web application desi
 - [Project Structure](#project-structure)
 - [Technologies Used](#technologies-used)
 - [Contributing](#contributing)
-- [License](#license)
 
 
 ## Features
